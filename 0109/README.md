@@ -2,8 +2,6 @@
 
 #### Inicializando um projeto TypeScript
 * ***`npm init -y`***
-
-#### Criação do package.json
 * ***`npm install typescript ts-node @types/node --save-dev`***
 
 #### Inicializando o tsconfig.json
