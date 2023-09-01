@@ -1,28 +1,43 @@
-# Trabalho_POO2
-email: cat68046@zbock.com
+## Ordem dos comandos:
 
+#### Inicializando um projeto TypeScript
+* ***`npm init -y`***
 
--------------------------
-###### npm init -y
-###### npm install typescript ts-node @types/node --save-dev
-###### npx tsc --init
-###### npm install prisma --save-dev
-###### npx prisma init --datasource-provider sqlite
-###### npx prisma migrate dev --create-only
-###### npx prisma migrate dev   // depois de alterar o schema.prisma
+#### Criação do package.json
+* ***`npm install typescript ts-node @types/node --save-dev`***
+
+#### Inicializando o tsconfig.json
+* ***`npx tsc --init`***
+
+#### Instalando o Prisma
+* ***`npm install prisma --save-dev`***
+
+#### Estabelecendo/Executando o Prisma => cria um novo diretório Prisma
+* ***`npx prisma init --datasource-provider sqlite`***
+
+#### Criando o migrate sem que seja aplicado
+* ***`npx prisma migrate dev --create-only`***
+
+#### Aplicando a modificação da migração (feito após se alterar o schema.prisma)
+* ***`npx prisma migrate dev`***
 --------------------------
-###### obs: continuando o quickstart no passo 4 tem o seguinte comando: `touch script.ts`, massss tem um probleminha... o comando não é reconhecido pelo windows. Pesquisando na internet eu achei um comando que faria com que esse código seria compatível com o windows: `npm install touch-cli -g`. MAS pode ser que dê outro erro pq a execução do script foi desabilidtada no sistema. Caso isso aconteça basta você mudar a permição com os seguintes comandos: 
-###### `Get-ExecutionPolicy` // aqui você vai ver qual é o status da permissão.
-###### `Set-ExecutionPolicy` // você vai setar uma nova permissão (eu coloquei como RemoteSigned)
-###### Por fim você vai conseguir rodar o comando `touch script.ts`.
-
-
+#### Para mandar queries para o database é necessário criar um arquivo TypeScript (script.ts) para executar as Prisma Client queries. Assim pode seguir-se dois caminhos: 
+#### 1° Caso usando o new item (ni)
+* ***`ni script.ts`***
+  
+#### 2° Caso usando o touch 
+* Continuando o quickstart, na página do Prisma, no passo 4 tem o seguinte comando: ***`touch script.ts`***, porém pode ocasionar um erro, por o comando não ser reconhecido pelo windows.
+  
+* Para com que esse código seria compatível com o windows é necessário rodar antes o ***`npm install touch-cli -g`***.
+* Porém ainda pode se ocorrer a existêcnia de outro erro, devido a execução do script ser desabilidtada no sistema. Caso isso aconteça basta *mudar a permição* com os seguintes comandos: 
+* ***`Get-ExecutionPolicy`*** // aqui você vai ver qual é o status da permissão.
+* ***`Set-ExecutionPolicy`*** // você vai setar uma nova permissão (como RemoteSigned)
+* Por fim você rodar o comando ***`touch script.ts`***.
 
 ---------------------------------
-#### COMO DELETAR UMA ROW
-async function main() {
-  const user = await prisma.mae.delete({
-    where:{
-      id: _ //SE ELA TIVER UM DEPENDENTE TEM QUE DELETAR ELE PRIMEIRO
-    }
-  })}
+
+#### Para executar o script.ts
+* ***`npx ts-node script.ts`***
+
+#### Interface Gráfica para visualizar e editar a data do banco de dados.
+* ***`npx prisma studio`***
