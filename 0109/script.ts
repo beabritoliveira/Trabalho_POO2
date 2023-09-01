@@ -114,10 +114,6 @@ async function main() {
     console.log(bebe);
   }
 
-  /*const users = await prisma.mae.findMany();
-  console.log(users);*/
-}
-
 const medicoData =[
       {
         CRM: 963852,
@@ -178,7 +174,7 @@ const medicoData =[
     }
      const medicos = await prisma.medico.findMany();
   console.log(medicos);
-
+}
 main()
   .then(async () => {
     await prisma.$disconnect()
