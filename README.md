@@ -1,4 +1,4 @@
-## Projeto modelagem de um sistema: Berçário 
+## Projeto modelagem de um sistema berçário 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Alunas: Beatriz Brito Oliveira, Cecilia de Jesus Barros, Maria Luiza Souza Pinheiro
 #### Professor: Otavio Lube dos Santos
