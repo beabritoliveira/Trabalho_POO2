@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client'
+import { randomInt } from 'crypto';
 
 const prisma = new PrismaClient()
 
@@ -118,52 +119,52 @@ const medicoData =[
       {
         CRM: 963852,
         nome: "Marcelo",
-        especializada: "Pediatra",
+        especializacao: "Pediatra",
       },
       {
         CRM: 987654,
         nome: "Roberta",
-        especializada: "Anestesista",
+        especializacao: "Anestesista",
       },
       {
         CRM: 654123,
         nome: "Manoel",
-        especializada: "Obstetra",
+        especializacao: "Obstetra",
       },
       {
         CRM: 875421,
         nome: "Paulo",
-        especializada: "Pediatra",
+        especializacao: "Pediatra",
       },
       {
         CRM: 741852,
         nome: "Monica",
-        especializada: "Anestesista",
+        especializacao: "Anestesista",
       },
       {
         CRM: 751852,
         nome: "Juliano",
-        especializada: "Obstetra",
+        especializacao: "Obstetra",
       },
       {
         CRM: 761852,
         nome: "Alcione",
-        especializada: "Obstetra",
+        especializacao: "Obstetra",
       },
       {
         CRM: 742852,
         nome: "Magno",
-        especializada: "Pediatra",
+        especializacao: "Pediatra",
       },
       {
         CRM: 202315,
         nome: "Orli",
-        especializada: "Anestesista",
+        especializacao: "Anestesista",
       },
       {
         CRM: 301508,
         nome: "Heloiza",
-        especializada: "Obstetra",
+        especializacao: "Obstetra",
       },
     ];
     for (const data of medicoData) {
@@ -175,6 +176,7 @@ const medicoData =[
      const medicos = await prisma.medico.findMany();
   console.log(medicos);
 }
+
 main()
   .then(async () => {
     await prisma.$disconnect()
