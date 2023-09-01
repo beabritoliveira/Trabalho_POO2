@@ -35,7 +35,7 @@ model Medico {
   CRM  Int @id 
   nome String
   telefone String?
-  especializada String
+  especializacao String
   parto Parto[]
 }
 
