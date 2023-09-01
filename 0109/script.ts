@@ -118,6 +118,67 @@ async function main() {
   console.log(users);*/
 }
 
+const medicoData =[
+      {
+        CRM: 963852,
+        nome: "Marcelo",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 987654,
+        nome: "Roberta",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 654123,
+        nome: "Manoel",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 875421,
+        nome: "Paulo",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 741852,
+        nome: "Monica",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 751852,
+        nome: "Juliano",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 761852,
+        nome: "Alcione",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 742852,
+        nome: "Magno",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 202315,
+        nome: "Orli",
+        especializada: "Obstetra",
+      },
+      {
+        CRM: 301508,
+        nome: "Heloiza",
+        especializada: "Obstetra",
+      },
+    ];
+    for (const data of medicoData) {
+      const medico = await prisma.medico.create({
+        data: data,
+      });
+      console.log(medico);
+    }
+     const medicos = await prisma.medico.findMany();
+  console.log(medicos);
+
 main()
   .then(async () => {
     await prisma.$disconnect()
