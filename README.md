@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Alunas: Beatriz Brito Oliveira, Cecilia de Jesus Barros, Maria Luiza Souza Pinheiro
 #### Professor: Otavio Lube dos Santos
-#### Turma: CC3MB
+#### Turma: CC4MB
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 * Foi realizado a criação de uma modelagem de classe, sem a criação de nenhuma classe e somente de atributos inicialmente (apresentado no *`TRAB_POO2.png`*). Tomando como base o texto:
