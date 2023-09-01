@@ -19,6 +19,7 @@ model Recem_Nascido {
   naturalidade String
   mae Mae @relation(fields: [maeId], references: [id])
   maeId Int
+  parto Parto[]
 }
 
 model Mae {
@@ -28,7 +29,6 @@ model Mae {
   telefone String?
   data_nascimento DateTime
   bebe Recem_Nascido[]
-  parto Parto[]
 }
 
 model Medico {
@@ -44,7 +44,7 @@ model Parto {
   data DateTime
   medico Medico @relation(fields: [medID], references: [CRM])
   medID Int
-  paciente Mae @relation(fields: [pacID], references: [id])
+  paciente Recem_Nascido @relation(fields: [pacID], references: [id])
   pacID Int
 
 }
