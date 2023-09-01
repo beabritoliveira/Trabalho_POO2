@@ -15,3 +15,14 @@ email: cat68046@zbock.com
 ###### `Get-ExecutionPolicy` // aqui você vai ver qual é o status da permissão.
 ###### `Set-ExecutionPolicy` // você vai setar uma nova permissão (eu coloquei como RemoteSigned)
 ###### Por fim você vai conseguir rodar o comando `touch script.ts`.
+
+
+
+---------------------------------
+#### COMO DELETAR UMA ROW
+async function main() {
+  const user = await prisma.mae.delete({
+    where:{
+      id: _ //SE ELA TIVER UM DEPENDENTE TEM QUE DELETAR ELE PRIMEIRO
+    }
+  })}
