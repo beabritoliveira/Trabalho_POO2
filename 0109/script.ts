@@ -122,12 +122,12 @@ const medicoData =[
       {
         CRM: 963852,
         nome: "Marcelo",
-        especializada: "Obstetra",
+        especializada: "Pediatra",
       },
       {
         CRM: 987654,
         nome: "Roberta",
-        especializada: "Obstetra",
+        especializada: "Anestesista",
       },
       {
         CRM: 654123,
@@ -137,12 +137,12 @@ const medicoData =[
       {
         CRM: 875421,
         nome: "Paulo",
-        especializada: "Obstetra",
+        especializada: "Pediatra",
       },
       {
         CRM: 741852,
         nome: "Monica",
-        especializada: "Obstetra",
+        especializada: "Anestesista",
       },
       {
         CRM: 751852,
@@ -157,12 +157,12 @@ const medicoData =[
       {
         CRM: 742852,
         nome: "Magno",
-        especializada: "Obstetra",
+        especializada: "Pediatra",
       },
       {
         CRM: 202315,
         nome: "Orli",
-        especializada: "Obstetra",
+        especializada: "Anestesista",
       },
       {
         CRM: 301508,
