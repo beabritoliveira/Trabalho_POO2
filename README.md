@@ -13,7 +13,7 @@
 
 
 
-
+--------------------------
 referências: https://www.prisma.io/docs/getting-started/quickstart
 https://www.prisma.io/docs/concepts/components/prisma-migrate/migrate-development-production
 https://cursos.alura.com.br/forum/topico-alternativa-ao-touch-para-usuarios-de-windows-246074
