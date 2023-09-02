@@ -10,3 +10,10 @@
 * Dessa forma foi criado as seguintes classes: *Recem_Nascido*, *Projenitora*, *Medico* e *Parto*. A classe Parto foi criada para que ligasse as tabelas do recem nascidos com a tabela médico, sem que necessariamente houvesse os identificadores de cada um deles na classe do outro.
 * A seguir se foi realizada a implementação da modelagem na plataforma do Visual Studio Code utilizando Prisma, Node/Typescript. Fazendo a modelação das classes no *`schema.prisma`*, localizada dentro da pasta prisma.
 * Além disso, houve-se a criação do arquivo *`script.ts`* com que permitiu o povoamento das classes dentro de uma função assíncrona que cria vetores que após serão instanciado dentro de um loop for.
+
+
+
+
+referências: https://www.prisma.io/docs/getting-started/quickstart
+https://www.prisma.io/docs/concepts/components/prisma-migrate/migrate-development-production
+https://cursos.alura.com.br/forum/topico-alternativa-ao-touch-para-usuarios-de-windows-246074
