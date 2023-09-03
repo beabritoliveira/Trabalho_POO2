@@ -173,8 +173,66 @@ const medicoData =[
       });
       console.log(medico);
     }
-     const medicos = await prisma.medico.findMany();
-  console.log(medicos);
+      const dat = new Date();
+    const partoData = [
+        {
+            data: dat,
+            medID: 963852,
+            pacID: 1
+        },
+        {
+            data: dat,
+            medID: 987654,
+            pacID: 2
+        },
+        {
+            data: dat,
+            medID: 654123,
+            pacID: 3
+        },
+        {
+            data: dat,
+            medID: 875421,
+            pacID: 4
+        },
+        {
+            data: dat,
+            medID: 741852,
+            pacID: 5
+        },
+        {
+            data: dat,
+            medID: 751852,
+            pacID: 6
+        },
+        {
+            data: dat,
+            medID: 761852,
+            pacID: 7
+        },
+        {
+            data: dat,
+            medID: 742852,
+            pacID: 8
+        },
+        {
+            data: dat,
+            medID: 202315,
+            pacID: 9
+        },
+        {
+            data: dat,
+            medID: 301508,
+            pacID: 10
+        }    
+    ];
+    for (const data of partoData) {
+        const parto = await prisma.parto.create({
+          data: data
+        });
+        console.log(parto);
+    }
+
 }
 
 main()
