@@ -7,21 +7,59 @@ const prisma = new PrismaClient()
 async function main() {
     const maeData = [
       {
-        nome: "Geovana",
-        data_nascimento: "1976-06-21T16:56:00-01:00",
+            nome: "Maria",
+            data_nascimento: "1990-04-15T14:30:00-01:00",
+            endereco:"567 Rua das Flores, Vila Velha, Espírito Santo",
+            telefone: "(27)99164-5608"
       },
       {
-        nome: "Maria",
-        data_nascimento: "1980-04-15T14:30:00-01:00",
+            nome: "Angélica",
+            data_nascimento: "1989-04-05T14:30:00-01:00",
+            endereco:"234 Rua 7, Linhares, Espírito Santo",
+            telefone: "(27)97484-8607"
       },
       {
-        nome: "Angélica",
-        data_nascimento: "1980-04-15T14:30:00-01:00",
+            nome: "Nilce",
+            data_nascimento: "1986-06-25T14:30:00-01:00",
+            endereco:"1234 Avenida da Paz, Colatina, Espírito Santo",
+            telefone: "(27)9098-66778"
       },
       {
-        nome: "Nilce",
-        data_nascimento: "1980-04-15T14:30:00-01:00",
-      }
+            nome: "Ana",
+            data_nascimento: "1987-07-11T14:30:00-01:00",
+            endereco:"1854 Avenida 3, Guarapari, Espírito Santo",
+            telefone: "(27)9098-66098"
+      },
+      {
+            nome: "Clarice",
+            data_nascimento: "1995-01-28T17:00:00-01:00",
+            endereco:"456 Avenida 54, Vitória, Espírito Santo",
+            telefone: "(27)92886-3098"
+      },
+      {
+            nome: "Danielle",
+            data_nascimento: "1993-11-20T18:30:00-01:00",
+            endereco:"4867 Avenida Secundária, Vitória, Espírito Santo",
+            telefone: "(27)96886-6098"
+      },
+      {
+            nome: "Fátima",
+            data_nascimento: "1982-09-27T14:30:00-01:00",
+            endereco:"2754 Rua Principal, Vitória, Espírito Santo",
+            telefone: "(27)94386-6308"
+      }, 
+      {
+            nome: "Alice",
+            data_nascimento: "1995-01-10T12:00:00-01:00",
+            endereco: "123 Rua 6, Vitória, Espírito Santo",
+            telefone: "(27)98765-4321"
+      },
+      {
+            nome: "Laura",
+            data_nascimento: "1983-09-15T14:00:00-01:00",
+            endereco: "567 Rua da Praia, Guarapari, Espírito Santo",
+            telefone: "(27)95555-5555"
+      },
     ];
   
   for (const data of maeData) {
