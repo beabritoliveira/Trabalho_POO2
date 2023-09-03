@@ -115,7 +115,7 @@ async function main() {
     console.log(bebe);
   }
 
-const medicoData =[
+  const medicoData =[
       {
         CRM: 963852,
         nome: "Marcelo",
@@ -167,14 +167,14 @@ const medicoData =[
         especializacao: "Obstetra",
       },
     ];
-    for (const data of medicoData) {
+  for (const data of medicoData) {
       const medico = await prisma.medico.create({
         data: data,
       });
       console.log(medico);
     }
-      const dat = new Date();
-    const partoData = [
+      
+  const partoData = [
         {
             data: dat,
             medID: 963852,
@@ -219,14 +219,9 @@ const medicoData =[
             data: dat,
             medID: 202315,
             pacID: 9
-        },
-        {
-            data: dat,
-            medID: 301508,
-            pacID: 10
-        }    
+        }, 
     ];
-    for (const data of partoData) {
+  for (const data of partoData) {
         const parto = await prisma.parto.create({
           data: data
         });
